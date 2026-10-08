@@ -1,0 +1,22 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;font-family:Arial,sans-serif;background:linear-gradient(135deg,#090018,#250044,#090018);color:#fff;display:flex;justify-content:center;align-items:center;padding:20px}
+.container{width:100%;max-width:600px}
+header{text-align:center;margin-bottom:24px}
+.logo{font-size:52px;animation:pulse 1.5s infinite}
+h1{font-size:32px;margin:8px 0;color:#ff5bd8;text-shadow:0 0 20px #ff00cc}
+header p{color:#bbb}
+.card{padding:25px;border-radius:25px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(15px);box-shadow:0 0 40px rgba(255,0,200,.2)}
+label{display:block;margin-bottom:8px;font-weight:bold}
+select,button{width:100%;padding:15px;border-radius:12px;border:0;font-size:16px}
+select{background:#180827;color:#fff;margin-bottom:15px;outline:none}
+button{background:linear-gradient(90deg,#ff1493,#8a2be2);color:#fff;font-weight:bold;cursor:pointer;transition:.3s}
+button:hover{transform:translateY(-2px);box-shadow:0 0 20px #ff1493}
+.shayari-box{min-height:230px;margin-top:20px;padding:25px 15px;border-radius:18px;background:rgba(0,0,0,.3);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.line{font-size:20px;line-height:1.8;opacity:0;transform:translateY(15px);animation:showLine .7s forwards;text-shadow:0 0 12px #ff55dd}
+.placeholder{color:#999;line-height:1.8}
+.actions{display:flex;gap:10px;margin-top:15px}
+.actions button{flex:1}
+footer{text-align:center;color:#888;font-size:13px;margin-top:18px}
+@keyframes showLine{to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@media(max-width:500px){h1{font-size:27px}.card{padding:18px}.line{font-size:18px}}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Shayari Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">💖</div>
+      <h1>Auto Shayari Generator</h1>
+      <p>एक क्लिक में नई शायरी बनाएं</p>
+    </header>
+
+    <section class="card">
+      <label for="category">Shayari Category</label>
+      <select id="category">
+        <option value="love">❤️ Love</option>
+        <option value="sad">💔 Sad</option>
+        <option value="attitude">😎 Attitude</option>
+        <option value="friendship">🤝 Friendship</option>
+        <option value="motivation">🔥 Motivation</option>
+      </select>
+
+      <button id="generate">✨ नई शायरी बनाएं</button>
+
+      <div id="shayariBox" class="shayari-box">
+        <div class="placeholder">Category चुनें और<br>नई शायरी बनाएं ❤️</div>
+      </div>
+
+      <div class="actions">
+        <button id="copy">📋 Copy</button>
+        <button id="download">⬇️ Download</button>
+      </div>
+    </section>
+
+    <footer>Made with ❤️ | Auto Shayari Generator</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
